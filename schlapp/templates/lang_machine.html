@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    {%load static%}
+    <link href={% static "css/style.css" %} rel="stylesheet">
+
+    <title>언어분석기</title>
 </head>
 <body>
 
-
+        <h1>언어분석기</h1>
+        <a class="facebook">파일가져오기<br><img src = "{%static 'img/facebook.png'%}" width="70"></a>
+        <a class="kakaotalk"><img src = "{%static 'img/kakaotalk.jpg'%}" width="70"></a>
         <form method="POST" action = {% url 'result' %}>
                 {% csrf_token %}
                 <textarea rows="30" cols="60" name = "sentence" onclick="this.value=''">분석하고 싶은 내용을 입력하세요</textarea>
                 <div class="myclass">{{bad_word}}</div>
                                                                                         
                 <br>
-                <input type="submit" value = "계산">
+                <input type="submit" value = "분석하기">
         
             </form>
     
