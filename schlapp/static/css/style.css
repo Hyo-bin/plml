@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'abc';
+    src: url('/static/font/abc.ttf')  format("truetype"),
+         local('abc');
+  }
+
+
+h1{
+    font-size: 40px;
+    
+}
+
+
+p{
+  font-size: 100px;
+}
+
+
+
+
+body{
+    /* background-image: url( '/static/img/backgroundpic.jpg'); */ 
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    border: 0;
+    padding: 0; 
+    margin: 0;
+    font-family: 'abc';
+}
+
+
+
+/* navbar */
+.topnav {
+    background-color: #468966;
+    overflow: hidden;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.school_icon {
+    color: #f2f2f2;
+    font-size: 17px;
+    margin-left: 15%;
+  }
+  .menu{
+      
+    margin-left: 70%;
+}
+/* /navbar */
+
+
+
+/* bodysection */
+section
+
+{   
+    margin: 0 20%;
+        
+    padding: 40px;
+    color : black;
+    
+
+}
+
+
+.body-section{
+    background-color:#FFF0A5;
+    height: 300px;
+    margin : 0 auto;
+    text-align: center
+}
+
+.centered {
+    display: inline-block; 
+}
+
+
+/* /body-section */
+
+
+
+
+/* button */
+
+button{
+    margin-top : 25px;
+    margin-right : 50px;
+    
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    font-family: 'abc';
+  }
+  button:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+  /* /button */
+
+
+
+
+
+  .bottom-flowers{
+    
+  }

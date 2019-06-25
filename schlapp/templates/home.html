@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PLML : School Light</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+
+    {%load static%}
+
+    <link href={% static "css/style.css" %} rel="stylesheet">
+
+    <link rel="shortcut icon" href="{% static "img/favicon.jpg" %}">
+    <style>
+      @font-face {
+        font-family: 'abc';
+        src: url('{% static "font/abc.ttf" %}');
+        src: local('{% static "font/abc.ttf" %}');
+      }
+    </style>
+
+</head>
+<body>
+
+    
+
+    
+
+        <div class="topnav">
+                <a class="school_icon"><img src = {% static "img/school.png" %} width="20">  School Light</a>
+            <div class = "menu">  
+                <a href="#first">언어분석기</a>
+                <a href="#second">로그인</a>
+                <a href="#third">회원가입</a>
+            </div>    
+        </div>
+    
+    
+    
+    
+<section class = "body-section">
+  
+              <!-- <p>SCHOOL LIGHT</p> -->
+            
+    <section>
+      <br><br><br><br>
+    
+        <div class="centered">
+            
+            
+            <img src = {% static "img/machine.png" %} width="300"> 
+            <br>
+            <a href="{% url 'lang_machine'%}"><button>언어분석기</button></a>
+          
+            
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+<!-- <div class="bottom-flowers"><img src = {% static "img/bottom-bg.png" %}></div> -->
+</body>
+</html>
